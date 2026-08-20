@@ -1,114 +1,56 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/MCPBlender/blender-mcp/main/assets/logo.png" width="80" alt="MCPBlender">
+# Blender MCP
 
-<h1>BlenderMCP</h1>
+**Connect Blender to any LLM**
 
-<p><strong>Control Blender 3D with Claude AI — in real time, through natural language</strong></p>
+Prompt-assisted 3D modeling, scene creation, and manipulation — driven by AI.
 
-<p>
-  <a href="https://pepy.tech/projects/blender-mcp">
-    <img src="https://static.pepy.tech/badge/blender-mcp/month" alt="Downloads/month">
-  </a>
-  <a href="https://github.com/MCPBlender/blender-mcp/stargazers">
-    <img src="https://img.shields.io/github/stars/MCPBlender/blender-mcp?style=flat&color=F5A623" alt="Stars">
-  </a>
-  <a href="https://github.com/MCPBlender/blender-mcp/network/members">
-    <img src="https://img.shields.io/github/forks/MCPBlender/blender-mcp?style=flat&color=4A90D9" alt="Forks">
-  </a>
-  <a href="https://github.com/MCPBlender/blender-mcp/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/MCPBlender/blender-mcp?style=flat&color=9B59B6" alt="MIT">
-  </a>
-  <a href="https://discord.gg/SNqPn4TcKQ">
-    <img src="https://img.shields.io/badge/Discord-Join-5865F2?style=flat&logo=discord&logoColor=white" alt="Discord">
-  </a>
-  <a href="https://pypi.org/project/blender-mcp">
-    <img src="https://img.shields.io/pypi/v/blender-mcp?style=flat&color=3B82F6&label=PyPI" alt="PyPI">
-  </a>
-</p>
+[![PyPI Downloads](https://static.pepy.tech/personalized-badge/blender-mcp?period=total&units=INTERNATIONAL_SYSTEM&left_color=BLACK&right_color=GREEN&left_text=downloads)](https://pepy.tech/projects/blender-mcp)
+[![PyPI Version](https://img.shields.io/pypi/v/blender-mcp?color=blue)](https://pypi.org/project/blender-mcp/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Discord](https://img.shields.io/badge/Discord-join-5865F2?logo=discord&logoColor=white)](https://discord.gg/SNqPn4TcKQ)
 
-<p>
-  <a href="https://trendshift.io/repositories/14834" target="_blank">
-    <img src="https://trendshift.io/api/badge/repositories/14834" alt="Trendshift" width="180" height="40">
-  </a>
-</p>
+[**Website**](https://blendermcp.org/) · [**Full Tutorial**](https://www.youtube.com/watch?v=lCyQ717DuzQ) · [**Discord**](https://discord.gg/SNqPn4TcKQ) · [**Releases**](https://github.com/ahujasid/blender-mcp/releases) · [**Sponsor**](https://github.com/sponsors/ahujasid)
 
-<p>
-  <a href="https://blendermcp.org"><strong>🌐 Website</strong></a> ·
-  <a href="https://www.youtube.com/watch?v=lCyQ717DuzQ"><strong>📹 Tutorial</strong></a> ·
-  <a href="https://discord.gg/SNqPn4TcKQ"><strong>💬 Discord</strong></a> ·
-  <a href="https://github.com/MCPBlender/blender-mcp/wiki"><strong>📖 Wiki</strong></a> ·
-  <a href="https://github.com/MCPBlender/blender-mcp/releases"><strong>📋 Changelog</strong></a>
-</p>
+<a href="https://trendshift.io/repositories/14834?utm_source=repository-badge&amp;utm_medium=badge&amp;utm_campaign=badge-repository-14834" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/repositories/14834" alt="ahujasid%2Fblender-mcp | Trendshift" width="250" height="55"/></a>
+
+<br />
+
+**Supporters**
+
+[CodeRabbit](https://www.coderabbit.ai/)
+[Kevin Guanche Darias](https://github.com/KevinGuancheDarias)
+
+**All supporters:** [Support this project](https://github.com/sponsors/ahujasid)
 
 </div>
 
 ---
 
-**BlenderMCP** connects Blender 3D to Claude AI (and any other LLM) through the [Model Context Protocol](https://modelcontextprotocol.io/). It enables prompt-driven 3D modeling, scene creation, and real-time object manipulation — directly from your AI assistant.
+## Quickstart
 
----
+Three steps: install `uv`, point your MCP client at the server, install the Blender addon.
 
-## Table of Contents
-
-- [Features](#features)
-- [Whats New](#whats-new)
-- [Quick Start](#quick-start)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Integrations](#integrations)
-- [API Credentials](#api-credentials)
-- [Troubleshooting](#troubleshooting)
-- [Technical Details](#technical-details)
-- [Security and Telemetry](#security-and-telemetry)
-- [Contributors](#contributors)
-- [Community](#community)
-- [Contributing](#contributing)
-
----
-
-## Features
-
-| | Capability | Description |
-|---|---|---|
-| 🔁 | **Two-way communication** | Real-time socket bridge between Claude and Blender |
-| 🧊 | **Object manipulation** | Create, move, scale, and delete 3D objects via prompts |
-| 🎨 | **Material control** | Apply, modify, and generate materials and colors |
-| 🔍 | **Scene inspection** | Full scene state — objects, lights, cameras |
-| 📷 | **Viewport screenshot** | Let the AI see the Blender viewport |
-| 🐍 | **Code execution** | Run arbitrary Python inside Blender |
-| 🌍 | **Poly Haven** | Download HDRIs, textures, and models via API |
-| 🤖 | **AI model generation** | 3D assets via Hyper3D Rodin and Hunyuan3D |
-| 🗂️ | **Sketchfab** | Search and import 3D models |
-| 🌐 | **Remote host** | Run the MCP server on a remote machine |
-
----
-
-## Whats New
-
-> Full changelog: [Releases](https://github.com/MCPBlender/blender-mcp/releases)
-
-- Hunyuan3D 3D model generation
-- Viewport screenshot for scene understanding
-- Sketchfab model search and import
-- Poly Haven asset integration
-- Hyper3D Rodin AI model generation
-- Remote host support
-
-**Updating from an older version:**
-1. Download the latest `addon.py` and replace it in Blender
-2. Remove and re-add the MCP server in your client config
-
----
-
-## Quick Start
+**1. Install uv**
 
 ```bash
 # macOS
 brew install uv
+
+# Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Windows
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-Add to **Claude > Settings > Developer > Edit Config > `claude_desktop_config.json`**:
+> **Warning:** Do not proceed before installing uv. Use the official installer — *not* `pip install uv`.
+
+**2. Add the MCP server to your client**
+
+<details open>
+<summary><b>Claude Desktop</b> — Settings → Developer → Edit Config</summary>
 
 ```json
 {
@@ -120,8 +62,90 @@ Add to **Claude > Settings > Developer > Edit Config > `claude_desktop_config.js
     }
 }
 ```
+</details>
 
-[Install the Blender addon](#blender-addon), click **Connect**, and start prompting.
+<details>
+<summary><b>Claude Code</b></summary>
+
+```bash
+claude mcp add blender uvx blender-mcp
+```
+</details>
+
+<details>
+<summary><b>Cursor / VS Code / OpenCode</b></summary>
+
+See [MCP Client Setup](#mcp-client-setup) below for per-client instructions and one-click install buttons.
+</details>
+
+**3. Install the Blender addon**
+
+```bash
+uvx blender-mcp install-addon
+```
+
+Then in Blender: **Edit → Preferences → Add-ons** → enable **Interface: Blender MCP**.
+
+**4. Connect**
+
+In Blender's 3D viewport, press `N` → open the **BlenderMCP** tab → click **Start MCP Server**. That's it — ask Claude to build something.
+
+> **Note:** Only run **one** instance of the MCP server (either Cursor or Claude Desktop), not both.
+
+---
+
+## Table of Contents
+
+- [Quickstart](#quickstart)
+- [Features](#features)
+- [Components](#components)
+- [Installation](#installation)
+  - [Prerequisites](#prerequisites)
+  - [Make your client find uvx](#make-your-client-find-uvx)
+  - [Pin the Python version](#pin-the-python-version)
+  - [Install without uv](#install-without-uv)
+  - [Environment Variables](#environment-variables)
+- [MCP Client Setup](#mcp-client-setup)
+  - [Claude for Desktop](#claude-for-desktop)
+  - [Cursor](#cursor)
+  - [Visual Studio Code](#visual-studio-code)
+  - [OpenCode](#opencode)
+- [Installing the Blender Addon](#installing-the-blender-addon)
+- [Upgrading (existing users)](#upgrading-existing-users)
+- [Usage](#usage)
+  - [Starting the Connection](#starting-the-connection)
+  - [Using with Claude](#using-with-claude)
+  - [Capabilities](#capabilities)
+  - [Example Commands](#example-commands)
+- [Persistent API Credentials](#persistent-api-credentials)
+- [Troubleshooting](#troubleshooting)
+- [Technical Details](#technical-details)
+- [Limitations & Security Considerations](#limitations--security-considerations)
+- [Telemetry Control](#telemetry-control)
+- [Feedback](#feedback)
+- [Contributing](#contributing)
+- [Disclaimer](#disclaimer)
+- [Star History](#star-history)
+
+---
+
+## Features
+
+| | |
+|---|---|
+| **Two-way communication** | Connect Claude AI to Blender through a socket-based server |
+| **Object manipulation** | Create, modify, and delete 3D objects in Blender |
+| **Material control** | Apply and modify materials and colors |
+| **Scene inspection** | Get detailed information about the current Blender scene |
+| **Code execution** | Run arbitrary Python code in Blender from Claude |
+| **Asset & model generation** | Poly Haven assets, Sketchfab models, and AI-generated 3D models via Hyper3D Rodin and Hunyuan3D |
+
+## Components
+
+The system consists of two main components:
+
+1. **Blender Addon** (`addon.py`) — a Blender addon that creates a socket server within Blender to receive and execute commands
+2. **MCP Server** (`src/blender_mcp/server.py`) — a Python server that implements the Model Context Protocol and connects to the Blender addon
 
 ---
 
@@ -129,31 +153,24 @@ Add to **Claude > Settings > Developer > Edit Config > `claude_desktop_config.js
 
 ### Prerequisites
 
-| Requirement | Minimum version |
-|---|---|
-| Blender | 3.0 |
-| Python | 3.10 |
-| uv | Latest |
-
-**Install uv:**
+- **Blender** 3.0 or newer
+- **Python** 3.10 or newer
+- **uv** package manager
 
 <details>
-<summary>macOS</summary>
+<summary><b>Installing uv, per platform</b></summary>
 
+**macOS**
 ```bash
 brew install uv
 ```
 
-</details>
-
-<details>
-<summary>Windows</summary>
-
+**Windows**
 ```powershell
 powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-Add to PATH (restart your client after):
+Then add uv to the user path in Windows (you may need to restart Claude Desktop after):
 
 ```powershell
 $localBin = "$env:USERPROFILE\.local\bin"
@@ -161,50 +178,33 @@ $userPath = [Environment]::GetEnvironmentVariable("Path", "User")
 [Environment]::SetEnvironmentVariable("Path", "$userPath;$localBin", "User")
 ```
 
-</details>
-
-<details>
-<summary>Linux</summary>
-
+**Linux**
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
+It lands in `~/.local/bin` — open a new shell so it's on your PATH.
+
+Otherwise, installation instructions are on their website: [Install uv](https://docs.astral.sh/uv/getting-started/installation/)
+
+On every OS, use uv's **official installer above — not `pip install uv`**, which may not create the `uvx` command and can hide uv inside an environment your client can't see.
 </details>
 
-> **Do not use `pip install uv`** — it may not create the `uvx` command.
+> **Warning:** Do not proceed before installing uv.
 
----
+### Make your client find uvx
 
-#### uvx not found by your client
+MCP clients started from a GUI (Claude Desktop, Cursor, VS Code from the Dock/Start menu) do **not** inherit your terminal's PATH, so a bare `"command": "uvx"` can fail with **`spawn uvx ENOENT`** even though `uvx` works in your terminal. If that happens:
 
-GUI clients don't inherit your terminal PATH. Get the full path:
-- `which uvx` (macOS/Linux) or `where uvx` (Windows)
-- Use it as `"command"` in your config
-- Windows: `"command": "cmd", "args": ["/c", "uvx", "blender-mcp"]`
-- Fully quit and relaunch your client after any config change
+- Find uvx's full path — `which uvx` (macOS/Linux) or `where uvx` (Windows) — and use it as `"command"`, e.g. `/opt/homebrew/bin/uvx` or `C:\Users\<you>\.local\bin\uvx.exe`.
+- On Windows you can instead wrap it: `"command": "cmd", "args": ["/c", "uvx", "blender-mcp"]`.
+- After any PATH or config change, **fully quit and relaunch** the client (Windows: quit from the system tray, not just the window; macOS: <kbd>Cmd</kbd>+<kbd>Q</kbd>).
 
----
+### Pin the Python version
 
-### Claude Desktop
+*Avoid conda / pyenv / version conflicts.*
 
-[Watch setup video](https://www.youtube.com/watch?v=neoK_WMq92g)
-
-**Claude > Settings > Developer > Edit Config > `claude_desktop_config.json`**:
-
-```json
-{
-    "mcpServers": {
-        "blender": {
-            "command": "uvx",
-            "args": ["blender-mcp"]
-        }
-    }
-}
-```
-
-<details>
-<summary>Pin Python 3.11 (conda / pyenv machines)</summary>
+uv chooses which Python runs the server. On machines with conda (auto-activated base), pyenv, or asdf — or with a newer CPython release that some dependencies do not have wheels for yet — uv can grab an interpreter that makes installation fail. Pin Python 3.11 and prefer uv-managed interpreters to avoid using whatever is on your PATH:
 
 ```json
 {
@@ -218,78 +218,122 @@ GUI clients don't inherit your terminal PATH. Get the full path:
 }
 ```
 
-</details>
+`--python 3.11` still satisfies this package's `requires-python >=3.10`, and `UV_PYTHON_PREFERENCE=only-managed` keeps uv from selecting conda, pyenv, asdf, or system Python first. (The repo's `.python-version` is only a hint for contributors and does **not** affect `uvx`.)
 
-<details>
-<summary>Install without uv</summary>
+If a previous failed attempt keeps replaying after a fix, clear the cache:
+
+```bash
+uv cache clean blender-mcp && uvx --refresh blender-mcp
+```
+
+### Install without uv
+
+On locked-down machines you can skip uvx entirely with [`pipx`](https://pipx.pypa.io), then point your client at the installed command:
 
 ```bash
 pipx install blender-mcp
-pipx ensurepath
+pipx ensurepath          # then restart your shell / client
 ```
 
-</details>
+Use the resulting absolute path as `"command"` (find it with `which blender-mcp` / `where blender-mcp`) and omit `args`.
+
+### Environment Variables
+
+The following environment variables can be used to configure the Blender connection:
+
+| Variable | Default | Description |
+|---|---|---|
+| `BLENDER_HOST` | `localhost` | Host address for Blender socket server |
+| `BLENDER_PORT` | `9876` | Port number for Blender socket server |
+
+Example:
+
+```bash
+export BLENDER_HOST='host.docker.internal'
+export BLENDER_PORT=9876
+```
 
 ---
 
-### Cursor
+## MCP Client Setup
 
-[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/link/mcp%2Finstall?name=blender&config=eyJjb21tYW5kIjoidXZ4IGJsZW5kZXItbWNwIn0%3D)
+### Claude for Desktop
 
-[Watch Cursor setup video](https://www.youtube.com/watch?v=wgWsJshecac)
+[Watch the setup instruction video](https://www.youtube.com/watch?v=neoK_WMq92g) (assuming you have already installed uv)
 
-<details>
-<summary>macOS / Linux</summary>
+Go to **Claude → Settings → Developer → Edit Config → `claude_desktop_config.json`** and include the following:
 
 ```json
 {
     "mcpServers": {
         "blender": {
             "command": "uvx",
-            "args": ["blender-mcp"]
+            "args": [
+                "blender-mcp"
+            ]
         }
     }
 }
 ```
 
+<details>
+<summary><b>Claude Code</b></summary>
+
+Use the Claude Code CLI to add the blender MCP server:
+
+```bash
+claude mcp add blender uvx blender-mcp
+```
 </details>
 
-<details>
-<summary>Windows</summary>
+### Cursor
+
+[![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/link/mcp%2Finstall?name=blender&config=eyJjb21tYW5kIjoidXZ4IGJsZW5kZXItbWNwIn0%3D)
+
+**macOS** — go to **Settings → MCP** and paste the following:
+
+- To use as a global server, use the *"add new global MCP server"* button and paste
+- To use as a project-specific server, create `.cursor/mcp.json` in the root of the project and paste
+
+```json
+{
+    "mcpServers": {
+        "blender": {
+            "command": "uvx",
+            "args": [
+                "blender-mcp"
+            ]
+        }
+    }
+}
+```
+
+**Windows** — go to **Settings → MCP → Add Server**, add a new server with the following settings:
 
 ```json
 {
     "mcpServers": {
         "blender": {
             "command": "cmd",
-            "args": ["/c", "uvx", "blender-mcp"]
+            "args": [
+                "/c",
+                "uvx",
+                "blender-mcp"
+            ]
         }
     }
 }
 ```
 
-</details>
+[Cursor setup video](https://www.youtube.com/watch?v=wgWsJshecac)
 
-> Run only one MCP server at a time — Cursor or Claude Desktop, not both.
+> **Note:** Only run **one** instance of the MCP server (either on Cursor or Claude Desktop), not both.
 
----
+### Visual Studio Code
 
-### VS Code
+*Prerequisites*: Make sure you have [Visual Studio Code](https://code.visualstudio.com/) installed before proceeding.
 
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_blender--mcp-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](vscode:mcp/install?%7B%22name%22%3A%22blender-mcp%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22blender-mcp%22%5D%7D)
-
-```json
-{
-    "mcpServers": {
-        "blender": {
-            "command": "uvx",
-            "args": ["blender-mcp"]
-        }
-    }
-}
-```
-
----
+[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_blender--mcp_server-0098FF?style=flat-square&logo=visualstudiocode&logoColor=ffffff)](vscode:mcp/install?%7B%22name%22%3A%22blender-mcp%22%2C%22type%22%3A%22stdio%22%2C%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22blender-mcp%22%5D%7D)
 
 ### OpenCode
 
@@ -311,20 +355,44 @@ pipx ensurepath
 
 ---
 
-### Claude Code CLI
+## Installing the Blender Addon
+
+**1. Recommended** — from a terminal, run:
 
 ```bash
-claude mcp add blender uvx blender-mcp
+uvx blender-mcp install-addon
 ```
 
----
+This copies the addon into your Blender addons folder as `blender_mcp.py`. It prints where it wrote to, and keeps a `.bak` of any file it replaces.
 
-### Blender Addon
+> Optional: `uvx blender-mcp addon-paths` lists detected Blender addons folders. Override the destination with `BLENDERMCP_ADDONS_DIR=/path/to/scripts/addons`.
 
-1. Download [`addon.py`](https://github.com/MCPBlender/blender-mcp/raw/main/addon.py)
-2. In Blender: **Edit > Preferences > Add-ons > Install...**
-3. Select `addon.py`
-4. Enable **"Interface: Blender MCP"**
+**2.** Open Blender
+
+**3.** Go to **Edit → Preferences → Add-ons**
+
+**4.** Enable **Interface: Blender MCP** (search "Blender MCP"). If it doesn't appear yet, click **Install…** and select the copied `blender_mcp.py` / `addon.py`, or restart Blender.
+
+**5. Manual alternative** — if the command above can't find your Blender install, or you prefer doing it by hand: download `addon.py` from this repo → in Blender, **Edit → Preferences → Add-ons → Install…** → select the downloaded `addon.py` → enable it.
+
+Then open the **BlenderMCP** tab in Blender's sidebar (press `N` in the 3D viewport) and click **Start MCP Server**. See [Starting the Connection](#starting-the-connection) below.
+
+## Upgrading (existing users)
+
+> For newcomers, go straight to [Quickstart](#quickstart). For existing users, see below.
+
+**1.** Update the addon file by running:
+
+```bash
+uvx blender-mcp install-addon
+uvx blender-mcp addon-paths   # optional: list detected Blender addons folders
+```
+
+**2.** In Blender: **Preferences → Add-ons** → disable and re-enable **Interface: Blender MCP** (or restart Blender), then click **Start MCP Server** again.
+
+**3.** Delete the MCP server from Claude and add it back again if the server package itself needs a refresh.
+
+> **Note:** the MCP server never modifies your Blender addon files on its own. When it starts, it checks whether the installed addon is behind the bundled copy and logs how to update; `install-addon` is what actually writes, and it keeps a `.bak` of the file it replaces. Trajectory capture still works on older loaded addons via an `execute_code` fallback.
 
 ---
 
@@ -332,218 +400,166 @@ claude mcp add blender uvx blender-mcp
 
 ### Starting the Connection
 
-![BlenderMCP sidebar](assets/addon-instructions.png)
+![BlenderMCP in the sidebar](assets/addon-instructions.png)
 
-1. Open the **3D View sidebar** (press `N` if not visible)
-2. Go to the **BlenderMCP** tab
-3. *(Optional)* Enable **Poly Haven** for asset downloads
+1. In Blender, go to the 3D View sidebar (press <kbd>N</kbd> if not visible)
+2. Find the **BlenderMCP** tab
+3. Turn on the checkboxes you'd like to use (see more under [Capabilities](#capabilities) below)
 4. Click **Connect to Claude**
+5. Make sure the MCP server is running in your terminal
 
-When connected, Claude shows a hammer icon confirming Blender tools are active:
+### Using with Claude
 
-![Hammer icon](assets/hammer-icon.png)
+Once the config file has been set on Claude, and the addon is running on Blender, you will see a hammer icon with tools for the Blender MCP.
 
----
+![BlenderMCP in the sidebar](assets/hammer-icon.png)
 
-### Example Prompts
+### Capabilities
+
+- Get scene and object information
+- Create, delete and modify shapes
+- Apply or create materials for objects
+- Execute any Python code in Blender
+- Download the right models, assets and HDRIs through [Poly Haven](https://polyhaven.com/)
+- Search and download models from [Sketchfab](https://sketchfab.com/)
+- AI generated 3D models through [Hyper3D Rodin](https://hyper3d.ai/) and [Hunyuan3D](https://3d.hunyuan.tencent.com/)
+
+### Example Commands
+
+Here are some examples of what you can ask Claude to do:
 
 | Prompt | Demo |
 |---|---|
-| "Create a low poly dungeon with a dragon guarding gold" | [Watch](https://www.youtube.com/watch?v=DqgKuLYUv00) |
-| "Beach scene with Poly Haven HDRIs, rocks, and vegetation" | [Watch](https://www.youtube.com/watch?v=I29rn92gkC4) |
-| "Recreate this reference image as a Blender scene" | [Watch](https://www.youtube.com/watch?v=FDRb03XPiRo) |
-| "Export the scene and build a Three.js sketch from it" | [Watch](https://www.youtube.com/watch?v=jxbNI5L7AH8) |
-| "Generate a garden gnome with Hyper3D" | — |
-| "Make this car red and metallic" | — |
-| "Studio lighting, isometric camera" | — |
+| *"Create a low poly scene in a dungeon, with a dragon guarding a pot of gold"* | [Watch](https://www.youtube.com/watch?v=DqgKuLYUv00) |
+| *"Create a beach vibe using HDRIs, textures, and models like rocks and vegetation from Poly Haven"* | [Watch](https://www.youtube.com/watch?v=I29rn92gkC4) |
+| Give a reference image, and create a Blender scene out of it | [Watch](https://www.youtube.com/watch?v=FDRb03XPiRo) |
+| *"Get information about the current scene, and make a threejs sketch from it"* | [Watch](https://www.youtube.com/watch?v=jxbNI5L7AH8) |
+| *"Generate a 3D model of a garden gnome through Hyper3D"* | |
+| *"Make this car red and metallic"* | |
+| *"Create a sphere and place it above the cube"* | |
+| *"Make the lighting like a studio"* | |
+| *"Point the camera at the scene, and make it isometric"* | |
 
 ---
 
-## Integrations
+## Persistent API Credentials
 
-### Poly Haven
-Download HDRIs, textures, and 3D models. Enable in the BlenderMCP sidebar.
+BlenderMCP supports persistent credentials via Blender Add-on Preferences:
 
-### Hyper3D Rodin
-AI 3D models. Free trial has a daily limit — get your own key at [hyper3d.ai](https://hyper3d.ai) or [fal.ai](https://fal.ai).
+**Edit → Preferences → Add-ons → Blender MCP**
 
-### Hunyuan3D
-Tencent 3D generation. Configure credentials in Blender addon preferences.
+You can store these values there so they survive Blender restarts:
 
-### Sketchfab
-Search and import 3D models into your scenes.
+- Sketchfab API Key
+- Hyper3D API Key
+- Hunyuan3D SecretId / SecretKey
+- Hunyuan3D API URL
 
----
+For headless setups or CI, credentials can also be injected by environment variables:
 
-## API Credentials
-
-Store in **Edit > Preferences > Add-ons > Blender MCP** to persist across restarts:
-
-| Credential | Environment variable |
-|---|---|
-| Sketchfab API Key | `BLENDERMCP_SKETCHFAB_API_KEY` |
-| Hyper3D API Key | `BLENDERMCP_HYPER3D_API_KEY` |
-| Hunyuan3D SecretId | `BLENDERMCP_HUNYUAN3D_SECRET_ID` |
-| Hunyuan3D SecretKey | `BLENDERMCP_HUNYUAN3D_SECRET_KEY` |
-| Hunyuan3D API URL | `BLENDERMCP_HUNYUAN3D_API_URL` |
-
-```bash
-export BLENDER_HOST=localhost
-export BLENDER_PORT=9876
-```
+| Variable |
+|---|
+| `BLENDERMCP_SKETCHFAB_API_KEY` |
+| `BLENDERMCP_HYPER3D_API_KEY` |
+| `BLENDERMCP_HUNYUAN3D_SECRET_ID` |
+| `BLENDERMCP_HUNYUAN3D_SECRET_KEY` |
+| `BLENDERMCP_HUNYUAN3D_API_URL` |
 
 ---
 
 ## Troubleshooting
 
-<details>
-<summary>Connection issues</summary>
-
-- Confirm the addon server is running in the BlenderMCP sidebar
-- Do not run `uvx` manually — the client starts the server
-- First command often fails; try again
-
-</details>
-
-<details>
-<summary>spawn uvx ENOENT</summary>
-
-```bash
-which uvx   # macOS / Linux
-where uvx   # Windows
-```
-
-Use that full path as `"command"` in your config.
-
-</details>
-
-<details>
-<summary>Timeout / complex operations</summary>
-
-Break the request into smaller sequential prompts.
-
-</details>
-
-<details>
-<summary>Python version conflicts</summary>
-
-```json
-"args": ["--python", "3.11", "blender-mcp"],
-"env": { "UV_PYTHON_PREFERENCE": "only-managed" }
-```
-
-Clear cache: `uv cache clean blender-mcp && uvx --refresh blender-mcp`
-
-</details>
-
-<details>
-<summary>Still broken?</summary>
-
-Restart your MCP client and the Blender server.
-
-</details>
-
----
+| Problem | Fix |
+|---|---|
+| **Connection issues** | Make sure the Blender addon server is running, and the MCP server is configured on Claude. **Do not** run the `uvx` command in the terminal. Sometimes the first command won't go through, but after that it starts working. |
+| **Timeout errors** | Try simplifying your requests or breaking them into smaller steps. |
+| **Poly Haven integration** | Claude is sometimes erratic with its behaviour. |
+| **Have you tried turning it off and on again?** | If you're still having connection errors, try restarting both Claude and the Blender server. |
 
 ## Technical Details
 
-```
-LLM Client  <-- MCP -->  MCP Server (src/blender_mcp/server.py)  <-- TCP:9876 -->  Blender Addon (addon.py)
-```
+### Communication Protocol
 
-JSON over TCP sockets:
+The system uses a simple JSON-based protocol over TCP sockets:
 
-```json
-{ "type": "create_object", "params": { "type": "SPHERE", "name": "Ball" } }
-{ "status": "success", "result": { "name": "Ball", "location": [0, 0, 0] } }
-```
+- **Commands** are sent as JSON objects with a `type` and optional `params`
+- **Responses** are JSON objects with a `status` and `result` or `message`
 
----
+## Limitations & Security Considerations
 
-## Security and Telemetry
+> **Warning:** The `execute_blender_code` tool allows running arbitrary Python code in Blender, which can be powerful but potentially dangerous. Use with caution in production environments. **ALWAYS save your work before using it.**
 
-> **`execute_blender_code` runs arbitrary Python in Blender. Save your work before using it.**
+- Poly Haven requires downloading models, textures, and HDRI images. If you do not want to use it, please turn it off in the checkbox in Blender.
+- Complex operations might need to be broken down into smaller steps.
 
-<details>
-<summary>Control telemetry</summary>
+## Telemetry Control
 
-**Disable entirely:**
+BlenderMCP collects anonymous usage data to help improve the tool. Telemetry consent is **on by default**, and you can turn it off in two ways:
+
+**1. In Blender** — go to **Edit → Preferences → Add-ons → Blender MCP** and uncheck the telemetry consent checkbox.
+
+- With consent (checked, the default): view the TnC for more details on data collected.
+
+**2. Environment Variable** — completely disable all telemetry by running:
 
 ```bash
 DISABLE_TELEMETRY=true uvx blender-mcp
 ```
 
-Or in config: `"env": { "DISABLE_TELEMETRY": "true" }`
+Or add it to your MCP config:
 
-In Blender: Edit > Preferences > Add-ons > Blender MCP > telemetry checkbox
+```json
+{
+    "mcpServers": {
+        "blender": {
+            "command": "uvx",
+            "args": ["blender-mcp"],
+            "env": {
+                "DISABLE_TELEMETRY": "true"
+            }
+        }
+    }
+}
+```
 
-</details>
+Telemetry data is not linked to your name or account. It may be used to improve BlenderMCP, for research, and to train AI models.
 
----
-
-## Contributors
-
-<div align="center">
-
-<a href="https://github.com/MCPBlender/blender-mcp/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=MCPBlender/blender-mcp&max=80&columns=12" alt="Contributors">
-</a>
-
-<sub>Made with [contrib.rocks](https://contrib.rocks)</sub>
-
-</div>
-
----
-
-## Community
-
-<div align="center">
-
-| | |
-|---|---|
-| 💬 Discord | [Join the community](https://discord.gg/SNqPn4TcKQ) |
-| 📝 Feedback | [Share your thoughts](https://bit.ly/blender-mcp-form) |
-| 📞 Call | [Schedule a call](https://bit.ly/blender-mcp-call) |
-| 🐛 Issues | [GitHub Issues](https://github.com/MCPBlender/blender-mcp/issues) |
-| 💖 Sponsor | [Support BlenderMCP](https://github.com/sponsors/SerenityUiX) |
-
-</div>
-
-**Supporters:** [CodeRabbit](https://www.coderabbit.ai/)
+Full detail on what is collected, and the license you grant by leaving telemetry on, is in [TERMS_AND_CONDITIONS.md](TERMS_AND_CONDITIONS.md).
 
 ---
+
+## Feedback
+
+We are actively looking for feedback on Blender MCP. If you have thoughts, share them [here](https://bit.ly/blender-mcp-form).
+
+If you have more detailed feedback, you can schedule a call with us [here](https://bit.ly/blender-mcp-call) — we will credit you in the project.
+
+### Join the Community
+
+Give feedback, get inspired, and build on top of the MCP: [**Discord**](https://discord.gg/SNqPn4TcKQ)
 
 ## Contributing
 
-1. Fork the repository
-2. Create a branch: `git checkout -b feature/your-feature`
-3. Commit and open a PR
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-See [CONTRIBUTING.md](https://github.com/MCPBlender/.github/blob/main/CONTRIBUTING.md) and [TERMS_AND_CONDITIONS.md](TERMS_AND_CONDITIONS.md).
+## Disclaimer
 
----
-
-## License
-
-MIT — see [LICENSE](LICENSE).
+This is a third-party integration and not made by Blender. Made by [Siddharth](https://x.com/sidahuj).
 
 ---
 
 ## Star History
 
+<a href="https://star-history.com/#ahujasid/blender-mcp&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=ahujasid/blender-mcp&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=ahujasid/blender-mcp&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=ahujasid/blender-mcp&type=Date" width="600" />
+  </picture>
+</a>
+
 <div align="center">
 
-[![Star History Chart](https://api.star-history.com/svg?repos=MCPBlender/blender-mcp&type=Date)](https://star-history.com/#MCPBlender/blender-mcp&Date)
-
-</div>
-
-
----
-
-<div align="center">
-
-[MCPBlender](https://github.com/MCPBlender) · [blendermcp.org](https://blendermcp.org) · Not affiliated with the Blender Foundation
-
-⭐ Star the repo if it helps your workflow!
+**If Blender MCP is useful to you, consider starring the repo**
 
 </div>
